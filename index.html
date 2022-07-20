@@ -8,43 +8,48 @@
   <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
-  <h1>Calculadora javascript</h1>
-  
-  <div class="pantalla">
-    <span id="display">0</span>
+  <div class="titulo-container">
+    <h1>Calculadora javascript <br>
+      <span>Jose Luis Yacelly Ramos</span></h1>
   </div>
-
-  <div class="teclado">
-    <img src="image/ON.png" alt="On" class="tecla" id="on" />
-    <img src="image/sign.png" alt="signo" class="tecla" id="sign" />
-    <img src="image/raiz.png" alt="raiz" class="tecla" id="raiz" />
-    <img src="image/dividido.png" alt="dividido" class="tecla divide" id="dividido" />
-
-    <img src="image/7.png" alt="7" class="tecla" id="7" />
-    <img src="image/8.png" alt="8" class="tecla" id="8" />
-    <img src="image/9.png" alt="9" class="tecla" id="9" />
-    <img src="image/por.png" alt="por" class="tecla multiplica" id="por" />
-
-    <img src="image/4.png" alt="4" class="tecla" id="4" />
-    <img src="image/5.png" alt="5" class="tecla" id="5" />
-    <img src="image/6.png" alt="6" class="tecla" id="6" />
-    <img src="image/menos.png" alt="menos" class="tecla resta" id="menos" />
-
-    <div class="row">
-      <div class="col1">
-        <img src="image/1.png" alt="1" class="tecla" id="1" />
-        <img src="image/2.png" alt="2" class="tecla" id="2" />
-        <img src="image/3.png" alt="3" class="tecla" id="3" />
-
-        <img src="image/0.png" alt="0" class="tecla" id="0" />
-        <img src="image/punto.png" alt="punto" class="tecla" id="punto" />
-        <img src="image/igual.png" alt="igual" class="tecla" id="igual" />
-      </div>
-      <div class="col2">
-        <img src="image/mas.png" alt="mas" class="tecla suma" id="mas" />
-      </div>
-
+  <div class="calculatorbody">
+    <div class="display" id="display">
+      <div data-previous-operand class="previous-operand" ></div>
+      <div data-current-operand class="current-operand"></div>
     </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete id="del">DEL</button>
+    <button data-operation disabled></button>
+
+    <button data-operation >SIN</button>
+    <button data-operation >COS</button>
+    <button data-operation >TAN</button>
+    <button data-operation disabled></button>
+
+    <button data-operation id="seno">SIN</button>
+    <button data-operation id="coseno">COS</button>
+    <button data-operation id="tangente">TAN</button>
+    <button data-operation id="dividir">÷</button>
+
+    <button data-number id="1">1</button>
+    <button data-number id="2">2</button>
+    <button data-number id="3">3</button>
+    <button data-operation id="multiplicar">*</button>
+
+    <button data-number id="4">4</button>
+    <button data-number id="5">5</button>
+    <button data-number id="6">6</button>
+    <button data-operation id="sumar">+</button>
+
+    <button data-number id="7">7</button>
+    <button data-number id="8">8</button>
+    <button data-number id="9">9</button>
+    <button data-operation id="menos">-</button>
+
+    <button data-number id="decimal">.</button>
+    <button data-number id="0">0</button>
+    <button data-equals class="span-two" id="igual">=</button>
+
   </div>
 
 
