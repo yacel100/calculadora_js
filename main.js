@@ -13,13 +13,13 @@ boton2.addEventListener('click', function () {
   display.innerHTML = display.innerHTML + '2';
 });
 
-const botonMas = document.getElementById('+');
+const botonMas = document.getElementById('mas');
 botonMas.addEventListener('click', function () {
   valorUno = parseInt(display.innerHTML);
   display.innerHTML = '';
 });
 
-const botonIgual = document.getElementById('=');
+const botonIgual = document.getElementById('igual');
 botonIgual.addEventListener('click', function () {
   valorFinal = parseInt(display.innerHTML);
   display.innerHTML = valorUno + valorFinal;
