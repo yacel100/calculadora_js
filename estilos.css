@@ -1,0 +1,12 @@
+html, body {
+  padding: 10px;
+}
+
+#display {
+  width: 100px;
+  padding: 5px;
+  background: #DDD; 
+  margin-bottom: 10px;
+  height: 20px;
+  text-align: right;
+}
