@@ -116,7 +116,7 @@ function calcular(operador, v_inicial, v_final) {
             resultado = parseFloat(v_inicial) / parseFloat(v_final);
             break;
     }
-    if (resultado.toFixed(2) != "NaN") {
+    if (resultado > "NaN") {
         display.innerHTML = resultado.toFixed(2);
         banderaPunto = false;
     } else {
