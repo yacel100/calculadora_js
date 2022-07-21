@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora</title>
-  <link rel="stylesheet" href="./estilos.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./estilos.css" />
 </head>
+
 <body>
-  <div class="titulo-container">
-    <h1>Calculadora javascript <br>
-      <span>Jose Luis Yacelly Ramos</span></h1>
-  </div>
-  <div class="calculatorbody">
-    <div class="display" id="display">
-      <div data-previous-operand class="previous-operand" ></div>
-      <div data-current-operand class="current-operand"></div>
+    <div class="titulo-container">
+        <h1>
+            Calculadora javascript <br />
+            <span>Jose Luis Yacelly Ramos</span>
+        </h1>
     </div>
-    <button data-all-clear class="span-two">AC</button>
-    <button data-delete id="del">DEL</button>
-    <button data-operation disabled></button>
+    <div class="calculatorbody">
+        <div class="display" id="display"></div>
+        <button data-all-clear class="span-two" id="del">DEL</button>
+        <button data-delete></button>
+        <button data-operation id="dividir">÷</button>
 
-    <button data-operation >SIN</button>
-    <button data-operation >COS</button>
-    <button data-operation >TAN</button>
-    <button data-operation disabled></button>
+        <button data-number id="1">1</button>
+        <button data-number id="2">2</button>
+        <button data-number id="3">3</button>
+        <button data-operation id="multiplicar">*</button>
 
-    <button data-operation id="seno">SIN</button>
-    <button data-operation id="coseno">COS</button>
-    <button data-operation id="tangente">TAN</button>
-    <button data-operation id="dividir">÷</button>
+        <button data-number id="4">4</button>
+        <button data-number id="5">5</button>
+        <button data-number id="6">6</button>
+        <button data-operation id="sumar">+</button>
 
-    <button data-number id="1">1</button>
-    <button data-number id="2">2</button>
-    <button data-number id="3">3</button>
-    <button data-operation id="multiplicar">*</button>
+        <button data-number id="7">7</button>
+        <button data-number id="8">8</button>
+        <button data-number id="9">9</button>
+        <button data-operation id="restar">-</button>
 
-    <button data-number id="4">4</button>
-    <button data-number id="5">5</button>
-    <button data-number id="6">6</button>
-    <button data-operation id="sumar">+</button>
+        <button data-number id="decimal">.</button>
+        <button data-number id="0">0</button>
+        <button data-equals class="span-two" id="igual">=</button>
+    </div>
 
-    <button data-number id="7">7</button>
-    <button data-number id="8">8</button>
-    <button data-number id="9">9</button>
-    <button data-operation id="menos">-</button>
-
-    <button data-number id="decimal">.</button>
-    <button data-number id="0">0</button>
-    <button data-equals class="span-two" id="igual">=</button>
-
-  </div>
-
-
-  <!--- Realizando la importacion del archivo javascript externo -->
-  <script src="./main.js"></script>
+    <!--- Realizando la importacion del archivo javascript externo -->
+    <script src="./main.js"></script>
 </body>
+
 </html>
